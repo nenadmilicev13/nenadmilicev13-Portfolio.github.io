@@ -4200,6 +4200,7 @@ img {
   -webkit-transition: 350ms ease;
   -o-transition: 350ms ease;
   transition: 350ms ease;
+  pointer-events: none;
 }
 
 .ghithub-repository__item:hover::after {
