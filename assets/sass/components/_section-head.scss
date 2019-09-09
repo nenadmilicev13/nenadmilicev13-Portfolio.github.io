@@ -1,0 +1,56 @@
+.section-head {
+    @include mq($tablet) {
+		text-align: center;
+	}
+}
+
+.section-head--center {
+    text-align: center;
+}
+
+.sectio-head__title {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+    font-family: $font-secondary;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: $cinnabar;
+    }
+
+    @include mq($tablet) {
+		&::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+    @include mq($phone) {
+        font-size: 35px;
+        margin-bottom: 23px;
+	}
+}
+
+.sectio-head__title--light {
+    color: $white;
+
+    &::after {
+        background-color: $white;
+    }
+}
+
+.sectio-head__title--center {
+    &::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

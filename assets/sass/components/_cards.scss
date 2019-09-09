@@ -1,0 +1,57 @@
+.cards {
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('assets/images/skills-bg.jpg');
+    padding: 120px 0;
+
+    @include mq($tablet) {
+        padding: 70px 0 50px;
+    }
+}
+
+.card-item {
+    max-width: 312px;
+    width: 100%;
+    margin: 0 auto;
+
+    img {
+        color: $white;
+        width: 80px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    @include mq($tablet) {
+		img {
+            width: 55px;
+        }
+	}
+}
+
+.card-item__top {
+    margin-bottom: 20px;
+}
+
+.card-item__title {
+    color: $white;
+    font-size: 25px;
+    font-family: $font-main;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include mq($phone) {
+        font-size: 20px;
+        margin-bottom: 10px;
+	}
+}
+
+.card-item__info {
+    padding: 20px;
+    text-align: center;
+    color: $white;
+
+    @include mq($phone) {
+		padding: 0 10px 40px;
+	}
+}

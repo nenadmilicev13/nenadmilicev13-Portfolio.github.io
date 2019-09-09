@@ -1,0 +1,68 @@
+.contact {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    z-index: 1;
+    background-color: $cinnabar;
+    border-radius: 9px 0 0 9px;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    transform: translateX(218px);
+    transition: $dur $ease;
+
+    &:hover {
+        transform: translateX(0);
+    }
+}
+
+.contact__title {
+    color: $white;
+    writing-mode: vertical-rl;
+    font-size: 19px;
+    transform: rotate3d(0, 0, 1, 180deg);
+    cursor: pointer;
+    margin-right: 13px;
+
+    @include mq($phone) {
+        font-size: 14px;
+    }
+}
+
+.contact__info-list-item {
+    margin: 5px 0;
+}
+
+.contact__info-link {
+    position: relative;
+    display: inline-block;
+    color: $white;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $white;
+        transform: scaleX(0);
+        transition: $dur $ease;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+    }
+
+    @include mq($phone) {
+		font-size: 14px;
+	}
+}
+
+.contact__info-phone {
+    font-size: 18px;
+}
+
+.contact__info-email {
+    font-size: 14px;
+}

@@ -1,0 +1,14 @@
+.entry-content {
+    p {
+        font-size: 15px;
+        font-family: $font-main;
+        margin-bottom: 15px;
+    }
+
+
+    @include mq($phone) {
+        p {
+            font-size: 13px;
+        }
+    }
+}

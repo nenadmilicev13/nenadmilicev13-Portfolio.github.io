@@ -1,0 +1,89 @@
+.skills {
+    padding: 100px 0;
+
+    @include mq($tablet) {
+        padding: 75px 0 50px;
+    }
+
+    @include mq($phone) {
+        padding: 35px 0 20px;
+	}
+}
+
+// .skills__container {
+//     margin-bottom: 7px;
+// }
+
+.skills__wrapp {
+    margin-bottom: 20px;
+}
+
+.skill__item {
+    border: 1px solid $grey-light;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+
+    img {
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        .skill__item-top {
+            transform: translateY(-120%);
+        }
+
+        .skill__item-info {
+            transform: translateY(-100%);
+        }
+    }
+
+    @include mq($phone) {
+		img {
+            width: 70px;
+        }
+	}
+}
+
+.skill__item-top {
+    transition: $dur $ease;
+    padding: 50px 0;
+
+    @include mq($phone) {
+		padding: 20px 0;
+	}
+}
+
+.skill__item-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include mq($phone) {
+        font-size: 20px;
+        margin-bottom: 12px;
+	}
+}
+
+.skill__item-info {
+    background-color: $grey;
+    transition: $dur $ease;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.skill__item-info-text {
+    font-size: 14px;
+    font-family: $font-main;
+    line-height: 1.7;
+    color: $white;
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+    @include center(xy, absolute);
+    padding: 0 20px;
+}

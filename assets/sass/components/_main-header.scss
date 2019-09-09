@@ -1,0 +1,96 @@
+.main-header {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.main-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq($tablet) {
+		display: block;
+	}
+}
+
+.main-nav {
+    text-align: center;
+
+    @include mq($tablet) {
+       display: none;
+    }
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-nav__item {
+    display: inline-block;
+
+    @include mq($tablet) {
+		display: block;
+	}
+}
+
+.main-nav__link {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-family: $font-main;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $cinnabar;
+        opacity: 0;
+        visibility: hidden;
+        transition: $dur $ease;
+        text-align: center;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.main-header__logo {
+    font-family: $font-secondary;
+    font-size: 35px;
+    font-weight: 600;
+    transition: $dur $ease;
+    width: 320px;
+
+    img {
+      width: 65px;
+    }
+
+    @include mq($tablet) {
+        img {
+            width: 50px;
+        }
+    }
+    
+    @include mq($tablet) {
+		img {
+            width: 38px;
+        }
+	}
+}
+
+.header-fixed .main-header__logo img {
+//    width: 200px;
+}

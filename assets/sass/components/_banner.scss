@@ -1,0 +1,50 @@
+.banner {
+    position: relative;
+    
+    .slick-dots {
+        @include center(x, absolute);
+        bottom: 50px;
+
+        &:focus {
+            outline: none;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            &:only-child {
+                display: none;
+            }
+        }
+
+        button {
+            width: 12px;
+            min-width: initial;
+            height: 12px;
+            padding: 0;
+            border: 1px solid $white;
+            border-radius: 50%;
+            background-color: transparent;
+            line-height: 9px;
+            text-indent: -2000em;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+	li.slick-active button {
+		background-color: $white;
+    }
+    
+    .slick-slide:focus {
+        outline: none;
+    }
+}
+
+.slider-item {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
