@@ -2,10 +2,8 @@
 *.log
 
 # ignore compiled files
-dist
 .sass-cache
-style.css
-style.css.map
+
 
 # ignore Editor files
 .idea
