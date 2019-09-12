@@ -38,6 +38,8 @@
     }
 
     @include mq($phone) {
+        margin-bottom: 15px;
+        
 		img {
           width: 100%;
         }

@@ -4217,6 +4217,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .ghithub-repository__item {
+    margin-bottom: 15px;
+  }
   .ghithub-repository__item img {
     width: 100%;
   }
