@@ -4368,6 +4368,18 @@ Menu-btn
   padding: 50px 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .main-footer {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-footer {
+    padding: 20px 0;
+  }
+}
+
 .main-footer__copyright {
   text-align: center;
 }
@@ -4379,6 +4391,12 @@ Menu-btn
 
 .main-footer__copyright a {
   color: #ef4035;
+}
+
+@media screen and (max-width: 1199px) {
+  .main-footer__copyright p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
