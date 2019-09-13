@@ -3667,7 +3667,7 @@ img {
 }
 
 .main-header__logo {
-  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
   font-size: 35px;
   font-weight: 600;
   -webkit-transition: 350ms ease;
@@ -3765,7 +3765,7 @@ img {
   padding-bottom: 20px;
   position: relative;
   font-weight: 700;
-  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
 }
 
 .sectio-head__title::after {
