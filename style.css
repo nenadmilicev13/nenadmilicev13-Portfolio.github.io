@@ -4363,4 +4363,22 @@ Menu-btn
   }
 }
 
+.main-footer {
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.main-footer__copyright {
+  text-align: center;
+}
+
+.main-footer__copyright p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.main-footer__copyright a {
+  color: #ef4035;
+}
+
 /*# sourceMappingURL=style.css.map */
