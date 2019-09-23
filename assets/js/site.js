@@ -4,6 +4,7 @@ import HeaderFix from './_site/headerFix';
 import Parallax from './_site/parallax';
 import ScrollToSec from './_site/scrollToSec';
 import NavBtn from './_site/navBtn';
+import AnimateOnScroll from './_site/animateOnScroll';
 
 jQuery(function () {
 	// Slick Slider
@@ -20,6 +21,9 @@ jQuery(function () {
 
 	//NavBtn
 	NavBtn.init();
+
+	//AnimateOnScroll
+	AnimateOnScroll.init();
 
 	console.log('hello');
 });
