@@ -14,6 +14,10 @@
     &:hover {
         transform: translateX(0);
     }
+
+    @include mq($phone) {
+       right: 8px;
+    }
 }
 
 .contact__title {

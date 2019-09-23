@@ -4122,6 +4122,12 @@ img {
           transform: translateX(0);
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    right: 8px;
+  }
+}
+
 .contact__title {
   color: #fff;
   -webkit-writing-mode: vertical-rl;
